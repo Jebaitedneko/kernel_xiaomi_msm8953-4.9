@@ -3060,6 +3060,8 @@ static const struct snd_soc_dapm_route audio_map[] = {
 	{"LINEOUT DAC", NULL, "PDM_IN_RX3"},
 #ifdef CONFIG_MACH_XIAOMI_C6
 	{ "Ext Spk", NULL, "LINEOUT PA"},
+	{"Ext Spk Switch", "On", "HPHL PA"},
+	{"Ext Spk Switch", "On", "HPHR PA"},
 #endif
 
 	/* lineout to WSA */
